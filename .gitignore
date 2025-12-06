@@ -1,41 +1,40 @@
-# Prerequisites
-*.d
+# ----------------------------------------------------
+# .gitignore para Proyectos C++/Arduino (Arquitectura Hexagonal)
+# ----------------------------------------------------
 
-# Compiled Object files
-*.slo
-*.lo
+# 1. ARTEFACTOS DE PRUEBAS DE PC (g++)
+# ----------------------------------------------------
+# Ejecutable de pruebas
+test_runner
+test_runner.exe
+# Binarios genéricos de compilación
+a.out
+
+# 2. ARTEFACTOS DEL IDE DE ARDUINO / ESP8266
+# ----------------------------------------------------
+# Archivos objeto, ELF y binarios generados
 *.o
-*.obj
+*.elf
+*.bin
+*.hex
+*.lst
+*.map
 
-# Precompiled Headers
-*.gch
-*.pch
+# Archivo de compilación C++ intermedio generado por el IDE
+*.ino.cpp
+*.ino.o
 
-# Linker files
-*.ilk
+# Carpetas de compilación temporal que el IDE podría crear localmente
+build/
+out/
 
-# Debugger Files
-*.pdb
+# 3. ARCHIVOS TEMPORALES Y DE SISTEMA
+# ----------------------------------------------------
+# Archivos temporales de editor
+*~
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Archivos de sistema de macOS
+.DS_Store
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# Archivos de sistema de Windows
+Thumbs.db
